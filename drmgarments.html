@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DRMGarments — Lookbook 2025</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:#000;color:#fff;scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+
+/* Scroll snap container */
+.snap-container{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+
+/* Panels */
+.panel{position:relative;width:100%;scroll-snap-align:start;display:flex;align-items:center;background-repeat:no-repeat;background-size:cover;background-position:center center}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.28), rgba(0,0,0,0.28));pointer-events:none}
+
+/* Fullscreen height for first two panels */
+#panel-fw,#panel-summer{height:100vh}
+
+/* Content */
+.content{position:relative;z-index:6;max-width:720px;padding:28px;margin-left:8%;color:#fff;text-align:left;transform:translateY(24px);opacity:0;transition:transform .6s ease, opacity .6s ease}
+.content.show{transform:translateY(0);opacity:1}
+.eyebrow{font-size:14px;opacity:0.85;margin-bottom:8px}
+h1{font-size:44px;line-height:1.02;margin-bottom:12px;font-weight:700}
+p.lead{font-size:18px;color:rgba(255,255,255,0.92);margin-bottom:18px;max-width:640px}
+.meta{font-size:16px;margin-bottom:18px;opacity:0.95}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;border:2px solid rgba(255,255,255,0.95);background:transparent;color:#fff;font-weight:700;letter-spacing:0.2px;transition:all .28s ease}
+.btn:hover{background:#111;color:#fff;transform:translateY(-2px)}
+
+/* Header */
+header{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 28px;z-index:50;background:transparent;height:72px;}
+.logo{font-weight:700;font-size:20px}
+nav{display:flex;gap:24px;font-weight:600;font-size:14px;color:#fff;position:absolute;left:50%;transform:translateX(-50%)}
+nav a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:6px;opacity:0.95}
+nav a:hover{background:rgba(255,255,255,0.06)}
+.header-right{display:flex;gap:16px;align-items:center}
+
+/* Scroll indicator */
+.scroll-indicator{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:8;color:rgba(255,255,255,0.85);font-size:13px;display:flex;gap:8px;align-items:center;opacity:0.9}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.9);animation: bounce 1.6s infinite}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(8px)}100%{transform:translateY(0)}}
+
+/* Responsive */
+@media (max-width:900px){.content{margin-left:6%;padding:20px;max-width:84%}h1{font-size:32px}.eyebrow{font-size:13px}}
+@media (max-width:520px){header{height:60px;padding:0 14px}.logo{font-size:18px}nav{display:none}.content{margin-left:5%;padding:16px;max-width:90%}h1{font-size:24px}.btn{padding:10px 14px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DRMGarments</div>
+  <nav>
+    <a href="#panel-fw">Outwear</a>
+    <a href="#panel-tshirt">T-shirt</a>
+    <a href="#panel-shirt">Shirt</a>
+    <a href="#panel-bottom">Bottom</a>
+  </nav>
+  <div class="header-right">
+    <!-- Search icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="2" fill="none"/><line x1="16" y1="16" x2="22" y2="22" stroke="#fff" stroke-width="2"/></svg>
+    <!-- Menu icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><rect y="4" width="24" height="2"/><rect y="11" width="24" height="2"/><rect y="18" width="24" height="2"/></svg>
+    <!-- Cart icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M6 6h15l-1.5 9h-13z"/><circle cx="9" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/></svg>
+  </div>
+</header>
+
+<div class="snap-container" id="snap">
+  <!-- Fall/Winter -->
+  <section id="panel-fw" class="panel" style="background-image:url('https://anuprerna-bloomscorp.s3.ap-south-1.amazonaws.com/IKBKOLCQP2IESMZ2D6VPFC9PB92408499.png'); background-size:cover; height:100vh;">
+    <div class="content" data-animate>
+      <div class="eyebrow">NEW</div>
+      <h1>Fall / Winter 2025</h1>
+      <p class="lead">Essentials redefined — structured outerwear and soft knitwear designed for modern life.</p>
+      <div class="meta">Timeless pieces. Thoughtful materials. Crafted to last.</div>
+      <a class="btn" href="#panel-summer">Explore Collection</a>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><span class="dot"></span></div>
+  </section>
+
+  <!-- Summer Sale -->
+  <section id="panel-summer" class="panel" style="background-image:url('https://img.freepik.com/premium-photo/female-beige-capsule-summer-wardrobe-white-room_176873-14792.jpg'); background-size:cover; height:100vh;">
+    <div class="content" data-animate>
+      <div class="eyebrow">SUMMER SALE</div>
+      <h1>Get Up to 50% Off</h1>
+      <p class="lead">Exclusive in-store discounts on our summer collection — cashmere sweaters, tees, and more.</p>
+      <div class="meta">Limited time offer. Available while stocks last.</div>
+      <a class="btn" href="#">See Summer Sale</a>
+    </div>
+  </section>
+
+  <!-- Cashmere -->
+  <section id="panel-cashmere" class="panel" style="background-image:url('https://shopdonni.com/cdn/shop/files/Donni_Ecomm_January2025-72.jpg?crop=center&height=3012&v=1738703210&width=2010'); background-size:contain; background-position:center; background-repeat:no-repeat; height:100vh;">
+    <div class="content" data-animate>
+      <div class="eyebrow">BESTSELLER</div>
+      <h1>Cashmere Sweater</h1>
+      <p class="lead">Ultra-soft pure cashmere knit with a refined, lightweight finish — perfect for layering.</p>
+      <div class="meta">Price: $159 · Sizes: S / M / L / XL</div>
+      <a class="btn" href="#">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Coat -->
+  <section id="panel-wool" class="panel" style="background-image:url('https://www.filippa-k.com/dw/image/v2/BFNP_PRD/on/demandware.static/-/Sites-filippa-k-master-catalog/default/dw1656c661/hi-res/31583-9529-0009-1.jpg?sw=1500&sfrm=jpg'); background-size:contain; background-position:center; background-repeat:no-repeat; height:100vh;">
+    <div class="content" data-animate>
+      <div class="eyebrow">NEW</div>
+      <h1>Wool Coat</h1>
+      <p class="lead">Double-faced wool coat with a tailored silhouette — structured and warm for colder days.</p>
+      <div class="meta">Price: $249 · Sizes: S / M / L / XL</div>
+      <a class="btn" href="#">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shirt -->
+  <section id="panel-oxford" class="panel" style="background-image:url('https://image.hm.com/assets/hm/29/f7/29f73aa4f6afc07ccefbd5dbaff3acd701dbae1e.jpg?imwidth=1260'); background-size:contain; background-position:center; background-repeat:no-repeat; height:100vh;">
+    <div class="content" data-animate>
+      <div class="eyebrow">ESSENTIAL</div>
+      <h1>Oxford Shirt</h1>
+      <p class="lead">Crisp oxford cotton with a clean button-down collar — versatile for work or weekend.</p>
+      <div class="meta">Price: $49.90 · Sizes: S / M / L / XL</div>
+      <a class="btn" href="#">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Denim Jeans (to hơn) -->
+  <!-- Denim Jeans -->
+
+
+</div>
+
+<script>
+(function(){
+  const options = { root: document.querySelector('.snap-container'), threshold: 0.35 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target.querySelector('[data-animate]');
+      if(!el) return;
+      if(entry.isIntersecting){ el.classList.add('show'); } 
+      else{ el.classList.remove('show'); }
+    });
+  }, options);
+  document.querySelectorAll('.panel').forEach(panel => observer.observe(panel));
+})();
+
+(function(){
+  const container = document.querySelector('.snap-container');
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowDown' || e.key === 'PageDown'){e.preventDefault(); scrollToNext();}
+    else if(e.key === 'ArrowUp' || e.key === 'PageUp'){e.preventDefault(); scrollToPrev();}
+  });
+  function scrollToNext(){
+    const panels = Array.from(document.querySelectorAll('.panel'));
+    const current = panels.findIndex(p => isElementMostlyVisible(p));
+    const next = Math.min(panels.length -1, current + 1);
+    panels[next].scrollIntoView({behavior:'smooth'});
+  }
+  function scrollToPrev(){
+    const panels = Array.from(document.querySelectorAll('.panel'));
+    const current = panels.findIndex(p => isElementMostlyVisible(p));
+    const prev = Math.max(0, current - 1);
+    panels[prev].scrollIntoView({behavior:'smooth'});
+  }
+  function isElementMostlyVisible(el){
+    const r = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    return (r.top >= -vh*0.25 && r.top <= vh*0.25);
+  }
+})();
+</script>
+
+</body>
+</html>
